@@ -1,0 +1,139 @@
+<!-- Comentario de linea multiples
+ Etiqueta DOCTYPE: Indica el tipo de archivo que estamos usando.
+ Etiqueta html: Contiene todo el documento.
+ <etiqueta> -> Iniciar la etiqueta
+ </etiqueta> -> Finaliza la etiqueta
+ <etiqueta/> -> Etiqueta de cierre automático
+ <etiqueta atributo="valor"> -> Una etiqueta que tiene atributos
+    proporciona información adicional
+ El atributo lang(language) indica el idioma del documento
+ 
+ Etiqueta head: Contiene la información de la configuración del documento
+ Etiqueta meta: Proporciona información sobre el Html, el navegador y otros sistemas (metadatos)
+ Atributo charset: Permite que uses caracteres especiales como acentos, ñ, etc
+ No es aplicable para las etiquetas
+ Atributo name: Indica que tipo de metadato es
+ Valor: Viewport indica que se trata de la configuración de la ventana gráfica
+ Atributo content: Almacena información o configuración
+ Valor: width=device-width, initial-scale=1.0 adapta el contenido a la página del dispositivo
+ Etiqueta title: Contiene el título del documento
+ Etiqueta body: Contiene todo lo que el usuario verá
+
+ Introducción a la web
+Fundamentos de desarrollo web
+Arquitectura de la web
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+</head>
+<body>
+    <!-- ETIQUETAS
+     Aquellas que indican al navegador qué tipo de contenido se esta escribiendo
+    -->
+ 
+    <!-- Etiquetas de título -->
+    <h1>Hello world con etiquetas de html</h1> <!-- H1: Etiqueta de título principal -->
+    <h2>Subtítulo</h2> <!-- H2: Etiqueta de subtítulo -->
+    <h3>Título secundario</h3> <!-- H3: Etiqueta de título secundario -->
+    <h4>Encabezado 4</h4>
+    <h5>Encabezado 5</h5>
+    <h6>Encabezado 6</h6>
+ 
+    <!-- Etiqueta de parrafo -->
+    <p style="color: blue;">Primera sesión del curso de Frontend Developer Web</p>
+    <p style="color: red;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua.
+    </p>
+    <!--Etiqueta de salto de linea(br)-->
+    <p>Este es un parrafo con <br> salto de linea</p>
+    <p style="color: brown;">H<br><br><br>a<br></p>
+
+    <!--Etiqueta separador Horizontal(hr)-->
+
+    <h2>Informacion personal</h2>
+    <p>Estos son mis datos</p>
+
+    <hr>
+
+    <h2>Informacion personal</h2>
+    <p>Estos son mis datos</p>
+
+    <!--Etiqueta de texto en negrita (strong)-->
+    <p>Esto es un ejemplo para la <strong> etiqueta strong</strong></p>
+
+    <!--Etiqueta de texto en cursiva (em)-->
+    <p>Hola mundo, es <em>mi primer proyecto</em> en HTML</p>
+
+    <!--Etiqueta para enlaces  (a)-->
+
+    <a href="https://www.google.com.pe">Ingresa a google</a>
+
+    <br>
+
+    <!-- Etiqueta img | width = ancho | height = altura -->
+    <img src="img/Christian.jpg" alt="MiFoto" width="100">
+
+    <!--Etiqueta de listado ordenado(ol)/desosrdenodadas (ul)-->
+    <!---(li) elemento de listas-->
+    <ol>
+        <li>html</li>
+        <li>desarrollo</li>
+        <li>Liderazgo</li>
+    </ol>
+
+    <ul>
+        <li>amanecer</li>
+        <li>anochecer</li>
+        <li>atardecer</li>
+    </ul>
+
+    
+    <audio controls>
+        <source src="audio/spot_publicitario.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Video
+        Atributos conocidos:
+        -controls: Muestra los controles del video
+        -width: Modela el ancho
+        -height: Modela la altura
+        -autoplay: Reproduce de manera automatica
+        -muted: Video sin sonido
+        -loop: Repite el video
+        -poster: Establece una imagen antes de reproducir
+        <video width='500' controls poster='img/escena1_jovenes_compartiendo.png'>
+            <source src='video/IA_video_cafeteria.mp4' type='video/mp4'>
+        </video>
+    -->
+    <br>
+    <video width="500" controls>
+        <source src="video/video_example.mp4" type="video/mp4">
+    </video>
+    <!-- Etiqueta iframe: Permite insertar contenido de otra página.
+        (vídeos, mapas, documentos, etc.)
+    -->
+    <br>
+    <iframe width="936" height="526" src="https://www.youtube.com/embed/gQHRycDIqWk" title="¡La mentira nazi se derrumba tras Stalingrado! 💣🛑 - SEGUNDA GUERRA MUNDIAL CON TOM HANKS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <!-- Subir archivos de multimedia -->
+    <br>
+    <input type="file">
+
+    <!-- Solo imágenes -->
+    <br>
+    <input type="file" accept="imagen/*">
+
+    <!-- Solo audio -->
+    <br>
+    <input type="file" accept="audio/*">
+
+    <!-- Solo video -->
+    <br>
+    <input type="file" accept="video/*">
+</body>
+</html>
